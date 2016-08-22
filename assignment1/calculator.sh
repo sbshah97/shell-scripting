@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 result=0
 
@@ -11,7 +11,7 @@ read n2
 echo "Enter operator"
 read op
 
-if[ $op == + ]
+if [ $op == + ]
 then
    result=`expr $n1 + $n2`
    echo $result

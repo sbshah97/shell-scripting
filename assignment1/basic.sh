@@ -1,25 +1,21 @@
-#!/bin/bash
-
-echo "Enter Amount:"
-read p
-echo "Enter Time:"
-read t
-echo "Enter ROI:"
-read r
- 
-i=` expr $p \* $t \* $r `
-i=` expr $i / 100 `
- 
-echo "Simple Interest is: $i "
-
-#!/bin/bash
-
+#!/bin/sh
 echo "Enter basic"
 read basic
 
-dp=`50 \*basic \/100`
-da=`35 \* basic \/100`
-hra=`8 \*basic \/100`
- 
+dp=`50 \* $basic \/100`
+echo "DP: $dp"
 
-salary = `expr `
+da=`35 \* '(' $basic + $dp ')' \/ 100`
+echo "DA: $da"
+
+hra=`8 \* '(' $basic + $ dp')' \/100`
+echo "HRA: $hra"
+
+ma=`expr 3\* '(' $basic + $dp ')' \/ 100`
+echo "MA: $ma"
+
+pf=`expr 10 \* '(' $basic + $dp ')' \/ 100`
+echo "PF: $pf"
+
+salary = `expr $basic + $dp + $da + $hra +$ma - $pf`
+echo "Salary: $salary"

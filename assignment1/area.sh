@@ -3,9 +3,7 @@
 echo "Enter radius of circle"
 read r
 
+a=`expr 22 \* $r \* $r`
 
-dec=` expr  
-a=` expr 22 \* $r \* $r \/ 7 `
-
-echo "Area of circle is: $a"
+echo "$a / (7 - 0 )" | bc -l
 

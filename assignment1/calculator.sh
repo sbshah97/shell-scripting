@@ -23,9 +23,9 @@ elif [ $op == / ]
 then
    result=`expr $n1 / $n2`
    echo $result
-elif [ $op == * ]
+elif [ $op == x ]
 then
-   result=`expr $n1 * $n2`
+   result=`expr $n1 \* $n2`
    echo $result
 else
    echo "Wrong operator selected"

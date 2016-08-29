@@ -2,13 +2,10 @@
 
 result=0
 
-echo "Enter the first no."
 read n1
 
-echo "Enter the second number"
 read n2
 
-echo "Enter operator"
 read op
 
 if [ $op == + ]

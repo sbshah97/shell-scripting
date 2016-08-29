@@ -12,7 +12,6 @@ do
    sum=`expr $sum + $x`
 done
 
-avg=`expr `
 echo "$sum / ( $n - 0 )" | bc -l
 
 

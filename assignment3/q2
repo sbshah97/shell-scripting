@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for ((i=1; i<=999; i++))
+do
+	sum=0
+	j=i
+    while [ $i -gt 0 ]
+    do
+		x=`expr $i % 10`
+		sum=`expr $sum + $x`
+		i=`expr $i / 10` | bc -l
+	done
+
+	if [ $sum -eq $j ]
+	then
+		echo $sum
+	fi
+done

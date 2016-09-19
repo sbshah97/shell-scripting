@@ -12,8 +12,8 @@ do
 done
 
 for((i=0; i<10; i++))
-dow
-	if [ ${array[$i]} - lt 0 ]
+do
+	if [ ${array[$i]} -lt 0 ]
 		then 
 		neg=`expr $neg + 1`
 	elif [ ${array[$i]} -gt 0 ]
@@ -24,5 +24,7 @@ dow
 	fi
 done
 
-echo $pos
+echo "Positive numbers:$pos"
+echo "Negative Numbers:$neg"
+echo "Zero:$zer"
 

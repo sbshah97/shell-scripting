@@ -1,4 +1,4 @@
-#1/bin/bash
+#!/bin/bash
 
 echo "Enter total number of rows"
 read n

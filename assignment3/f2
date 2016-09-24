@@ -35,13 +35,12 @@ for (( i = 0; i < 9 ; i++ ))
 do
 for (( j = 0; j < 9; j++ ))
 do
-if [ ${arr[$j]} -gt ${arr[$j+1]}  ]; then
+if [[ "${arr[$j]}" > "${arr[$j+1]}" ]]; then
 t=${arr[$j]}
 arr[$j]=${arr[$j+1]}
 arr[$j+1]=$t
 fi
 done
 done
-
 
 echo "${arr[*]}"

@@ -29,7 +29,7 @@ for(( i=0; i<10; i++ ))
 
 echo "${arr[*]}"
 
-echo "neg $neg pos $posi zero $z"
+echo "Negative: $neg Positive: $posi Zero: $z"
 
 for (( i = 0; i < 9 ; i++ ))
 do

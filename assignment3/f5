@@ -38,4 +38,16 @@ i=$(($i+$ct))
 
 done
 
+for (( i = 0; i < 4 ; i++ ))
+do
+for (( j = 0; j < 4; j++ ))
+do
+if [ ${arr[$j]} -gt ${arr[$j+1]}  ]; then
+t=${arr[$j]}
+arr[$j]=${arr[$j+1]}
+arr[$j+1]=$t
+fi
+done
+done
+
 echo min = "${arr[0]}" max = "${arr[4]}"

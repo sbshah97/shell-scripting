@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "The files in the current directory are"
+find * -maxdepth 0 -type f
+echo "The number of files are: "
+find * -maxdepth 0 -type f | wc -l
+
+echo "The directories in the current directory are"
+ls -d */
+echo "The number of directories are"
+ls -d */ | wc -l
+
+
+

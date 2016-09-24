@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo Different date formats
+date
+date +%D
+date +%c
+

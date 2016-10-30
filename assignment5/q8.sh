@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Enter marks of UNIX"
+echo "Enter marks of unix"
 read m1
 echo "Enter marks of DS"
 read m2

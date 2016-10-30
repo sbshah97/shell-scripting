@@ -1,31 +1,23 @@
 #!/bin/bash
 
-i=0
-NUM=$((RANDOM%10))
-
-for((i=0; i<6; i++))
+ctr=0
+while true
 do
-	
-	read x
-
-	if [[ $NUM -gt $x ]] 
-	then
-		echo "Number is greater than assumed number"
-	elif [[ $NUM -lt $x ]]
-	then
-		echo "Number is lesser than assumed number"
-	else
-		i=1;
-		break
-	fi	 
-done
-
-if [ $i -eq 1 ]
-then
-	echo "You have guessed the correct number"
-elif [ $i -eq 0 ]
-then 
-	echo "You could not guess the correct number"
+  s=`date "+%S"`
+   m=`date "+%M"`
+   let rn=s\*m
+   let ctr=ctr+1
+   echo -e "Enter your guess \c"
+   read gu
+   echo "Random Generated Is: $rn"
+   if [ $gu -gt $rn ] ; then
+      echo "Too Big"
+   elif [ $gu -lt $rn ] ; then
+          echo "Too Small"
+       else
+          echo "Equals"
+   fi
+   if [ $ctr -eq 5 ] ; then
+      exit    
 fi
-
-echo "The correct number is " $NUM 
+done 

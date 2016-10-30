@@ -1,4 +1,0 @@
-#!/bin/bash
-
-echo -n $1 
-echo " Logged in at" `date +%c`

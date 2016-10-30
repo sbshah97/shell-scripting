@@ -1,5 +1,6 @@
 #!/bin/bash
+echo "Enter any file name or file path"
+read file
 
-echo "Enter a filename"
-read x
-ls -l $x
+ls -l $file
+

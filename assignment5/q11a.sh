@@ -1,24 +1,24 @@
 #!/bin/bash
 
-echo "Enter total number of rows"
+echo "Enter number of rows"
 read n
 
 for((i=1;i<=$n;i++))
 do
 	for((j=i;j<=$n;j++))
 	do
-		printf "  ";
+		printf " ";
 	done
 
 	for((k=i;k<=(2*$i-1);k++))
 	do 
-		printf "$k ";
+		printf "$k";
 	done
 
 	
 	for((l=($k-2);l>=$i;l--))
 	do 	
-		printf "$l ";
+		printf "$l";
 	done
 
 	echo " "

@@ -5,11 +5,10 @@ declare -A array1
 declare -A array2 
 declare -A sumAll
 
-printf "Enter the number of rows for both the matrices "
+printf "Enter the rows and columns for both matrices"
 read m
-printf "Enter the number of columns for both the matrices "
 read n
-echo "Enter the elements for the first matrix "
+echo "Enter the elements for the 1st matrix "
 
 for((i=0;i<m;i++))
 do
@@ -20,7 +19,7 @@ array1[$i,$j]=$a
 done
 done
 
-echo "Enter the elements for the second matrix "
+echo "Enter the elements for the 2nd matrix "
 for((i=0;i<m;i++))
 do
 for((j=0;j<n;j++))

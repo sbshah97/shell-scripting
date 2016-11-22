@@ -1,6 +1,0 @@
-#!/bin/bash
-
-for file in *.sh;
-do
-    mv "$file" "`basename "$file" .sh`.exe"
-done
